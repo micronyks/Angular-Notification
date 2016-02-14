@@ -1,0 +1,51 @@
+.notification-bar {
+    position: fixed;
+    bottom: 3em;
+    /*left: 2em;*/
+    right: 2em;
+    /*width: 8em;*/
+}
+
+.notification-message {
+    min-height: 1.5em;
+    margin-top: 3px;
+    opacity: 0;
+    width: 300px;
+    text-align: center;
+    /*//background-color: cornflowerblue;*/
+    line-height: 16px;
+    color: white;
+    border: solid 1px transparent;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    /*-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;*/
+    /*padding: 3px;*/
+    cursor: pointer;
+}
+
+    .notification-message.show {
+        opacity: 1;
+    }
+
+    .notification-message.fb {
+        background-color: #337ab7;
+        /*background-color: red;*/
+    }
+
+    .notification-message > a {
+        float: right;
+        color: white;
+    }
+
+    .notification-message > div {
+        font-size: smaller;
+    }
+
+    .notification-message:hover {
+        border: solid 1px white;
+    }
